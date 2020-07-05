@@ -1,0 +1,33 @@
+.component {
+  padding: 0 0 12px 0;
+}
+
+.description:not(:empty) {
+  margin: 0 0 36px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.creator {
+  width: calc(33% - 12px);
+  margin: 12px auto 0;
+}
+
+.creator input {
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  .columns {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .creator {
+    width: 100%;
+  }
+}
