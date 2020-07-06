@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './App.scss';
 
-import list from './List.js';
+import List from './List.js';
 
 
 class App extends React.Component {
@@ -22,3 +22,4 @@ class App extends React.Component {
 }
 
 export default App;
+
