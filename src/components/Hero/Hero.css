@@ -1,12 +1,10 @@
-@import '../../styles/settings.scss';
-
 .component {
   position: relative;
-  min-height: ($base-size * 15);
-  background: $color-dark;
-  margin: 0 0 ($base-size * 3) 0;
+  min-height: 180px;
+  background: #2f3542;
+  margin: 0 0 36px 0;
   overflow: hidden;
-  border-radius: $radius;
+  border-radius: 5px;
 }
 
 .title {
@@ -14,10 +12,10 @@
   z-index: 2;
   left: 50%;
   top: 50%;
-  font-size: ($base-size * 2.5);
+  font-size: 30px;
   text-transform: uppercase;
-  color: $color-light;
-  transform: translate(-50%,-50%);
+  color: #fff;
+  transform: translate(-50%, -50%);
 }
 
 .image {
@@ -29,10 +27,6 @@
   object-fit: cover;
 }
 
-.subtitle{
- 
+.subtitle {
   text-align: center;
-
-
-
 }
