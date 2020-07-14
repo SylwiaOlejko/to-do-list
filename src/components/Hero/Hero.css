@@ -28,5 +28,6 @@
 }
 
 .subtitle {
+  position: relative;
   text-align: center;
 }
