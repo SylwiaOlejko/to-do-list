@@ -6,6 +6,8 @@ import Hero from '../Hero/Hero';
 
 import PropTypes from 'prop-types';
 
+import Column from '../Column/Column';
+
 PropTypes.node.isRequired
 
 class List extends React.Component {
@@ -30,7 +32,22 @@ class List extends React.Component {
           {this.props.children}
         </div>
         <h2 className={styles.title}>{this.props.titleText}</h2>
+    
+      <table className={styles.component}>
+
+        <div className={styles.component}>
+        <Column titleText={this.props.title}/>
+        <tr>
+        <td className={styles.column}> Animals</td>
+        <td className={styles.column}> Plants</td>
+        <td className={styles.column}> Minerals</td>
+       
+        </tr>
+         </div>
+      </table>
+        
       </main>
+     
       </section>
     );
   }
