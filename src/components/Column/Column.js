@@ -10,11 +10,13 @@ class Column extends React.Component{
 <header>
     <main className={styles.title}>
         
-        <h3 className={styles.component}></h3>
+        <h3 className={styles.component}>
        
+        </h3>
     </main>
 </header>
         
         )
 };
 }
+export default Column;
