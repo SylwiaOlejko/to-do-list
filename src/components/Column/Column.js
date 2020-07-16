@@ -2,6 +2,8 @@ import React from 'react';
 
 import styles from 'Column.scss';
 
+
+
 class Column extends React.Component{
     render() {
         return (
