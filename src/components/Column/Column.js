@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from 'Column.scss';
+import styles from './Column.scss';
 
 
 

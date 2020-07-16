@@ -4,10 +4,9 @@ import styles from './List.scss';
 
 import Hero from '../Hero/Hero';
 
-
+import Column from '../Column/Column';
 
 import PropTypes from 'prop-types';
-
 
 
 PropTypes.node.isRequired
@@ -35,10 +34,10 @@ class List extends React.Component {
         </div>
         <h2 className={styles.title}>{this.props.titleText}</h2>
 
-        
-        <div className={styles.component}> Animals</div>
-        <div className={styles.component}> Plants</div>
-        <div className={styles.component}> Minerals</div>
+        <Column title={this.props.title}/>
+        <div className={styles.columns}> Animals</div>
+        <div className={styles.columns}> Plants</div>
+        <div className={styles.columns}> Minerals</div>
        
        
       </main>
