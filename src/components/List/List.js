@@ -7,6 +7,7 @@ import Column from '../Column/Column';
 
 import PropTypes from 'prop-types';
 
+import {settings} from '../../data/dataStore';
 
 PropTypes.node.isRequired
 
@@ -14,10 +15,12 @@ class List extends React.Component {
 
   static propTypes = {
     title: PropTypes.node,
-    children: PropTypes.node,
+    description: PropTypes.node,
+    columns: PropTypes.array,
+    
   }
   static defaultProps = {
-    children: <p>I can do all the things!!!</p>,
+    description: settings.defaultListDescription, 
   }
   render() {
     return (
@@ -29,7 +32,8 @@ class List extends React.Component {
         <Hero titleText={this.props.title} />
         
         <div className={styles.description}>
-          {this.props.children}
+          {this.props.description}
+          
         </div>
         <h2 className={styles.title}>{this.props.titleText}</h2>
 
