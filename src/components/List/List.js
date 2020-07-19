@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from './List.scss';
 
 import Hero from '../Hero/Hero';
@@ -34,11 +33,9 @@ class List extends React.Component {
         </div>
         <h2 className={styles.title}>{this.props.titleText}</h2>
 
-        <Column title={this.props.title}/>
-        <div className={styles.columns}> Animals</div>
-        <div className={styles.columns}> Plants</div>
-        <div className={styles.columns}> Minerals</div>
-       
+        <Column title="Animals"/>
+        <Column title="Plants"/>
+        <Column title="Minerals"/>
        
       </main>
      
