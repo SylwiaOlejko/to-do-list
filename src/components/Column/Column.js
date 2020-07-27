@@ -4,6 +4,9 @@ import styles from './Column.scss';
 
 
 class Column extends React.Component{
+    
+
+    
     render() {
         return (
             <main className={styles.component}>
@@ -12,6 +15,7 @@ class Column extends React.Component{
                 </h3>
             </main>
         )
+       
 };
 }
 export default Column;

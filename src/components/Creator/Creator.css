@@ -1,0 +1,39 @@
+.component {
+  width: 100%;
+}
+
+.component input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cacfd9;
+  padding: 12px 18px;
+  margin: 0 0 12px 0;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  height: 0;
+  transition: all 200ms;
+}
+
+.buttons.buttonsShown {
+  opacity: 1;
+  height: 40px;
+}
+
+.buttons > * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.buttons > *:first-child {
+  margin: 0;
+}
+
+.buttons > *:first-child ~ * {
+  margin: 0 0 0 12px;
+}
