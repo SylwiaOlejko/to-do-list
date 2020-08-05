@@ -11,7 +11,7 @@ import {settings} from '../../data/dataStore';
 
 import Creator from '../Creator/creator';
 
-PropTypes.node.isRequired
+PropTypes.node.isRequired,
 
 class List extends React.Component {
     state = {
@@ -34,9 +34,9 @@ class List extends React.Component {
             key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
@@ -46,27 +46,27 @@ class List extends React.Component {
       <section>
         <h2 className={styles.component}> Hakuna matata</h2>
       
-      <main className={styles.component}>
-        <h1 className={styles.title}>My first React list</h1>
-        <Hero titleText={this.props.title} />
+        <main className={styles.component}>
+          <h1 className={styles.title}>My first React list</h1>
+          <Hero titleText={this.props.title} />
         
-        <div className={styles.description}>
-          {this.props.description}
+          <div className={styles.description}>
+            {this.props.description}
           
-        </div>
-        <h2 className={styles.title}>{this.props.titleText}</h2>
+          </div>
+          <h2 className={styles.title}>{this.props.titleText}</h2>
         
         
-        {this.state.columns.map(({key, ...columnProps}) => (
-          <Column key={key} {...columnProps} />
-        ))}
+          {this.state.columns.map(({key, ...columnProps}) => (
+            <Column key={key} {...columnProps} />
+          ))}
 
-       <div className={styles.creator}>
-        <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
-      </div>
+          <div className={styles.creator}>
+            <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
+          </div>
        
        
-      </main>
+        </main>
      
       </section>
     );
