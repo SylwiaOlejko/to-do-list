@@ -67,3 +67,10 @@ export const listData = {
     },
   ],
 };
+
+const initialStoreData = {
+  app: {...pageContents},
+  
+};
+
+export default initialStoreData;
