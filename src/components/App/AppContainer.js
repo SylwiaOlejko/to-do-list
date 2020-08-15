@@ -2,7 +2,7 @@ import {connect} from 'react-redux';
 import App from './App';
 
 const mapStateToProps = state => ({
-  columns: state.lists,
+  title: state.app.title,
 });
 
 export default connect(mapStateToProps)(App);
