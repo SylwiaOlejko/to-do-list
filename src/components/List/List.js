@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Column from '../Column/ColumnContainer.js';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
-import Card from '../Card/Card';
+//import Card from '../Card/Card';
 //import Creator from '../Creator/creator';
 
 

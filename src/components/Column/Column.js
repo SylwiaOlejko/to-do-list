@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Column.scss';
 import Card from '../Card/Card';
-import Creator from '../Creator/creator';
+//import Creator from '../Creator/creator';
 import {settings} from '../../data/dataStore';
 import Icon from '../Icon/Icon';
+//import ReactHtmlParser from 'react-html-parser';
+import PropTypes from 'prop-types';
+
 
 class Column extends React.Component{
     
@@ -13,6 +16,7 @@ class Column extends React.Component{
     //domyślna definicja wartości propsa icon
     static defaultProps = {
       icon: settings.defaultColumnIcon,
+      
     }
     render() {
 
@@ -49,4 +53,9 @@ class Column extends React.Component{
        
     }
 }
+Column.propTypes = {
+  cards: PropTypes.any,
+  title: PropTypes.string,
+  icon: PropTypes.any,
+};
 export default Column;

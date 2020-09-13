@@ -1,9 +1,7 @@
 import {connect} from 'react-redux';
 import Column from './Column';
-import {connect} from 'react-redux';
-import List from './List';
-import getColumnsForColumn from '../../redux/columnRedux.js';
-import createActionAddColumn from '../../redux/columnRedux.js';
+import getColumnsForCards from '../../redux/cardsRedux.js';
+import createActionAddCard from '../../redux/cardsRedux.js';
 
 
 export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => card.columnId == columnId);
@@ -18,7 +16,7 @@ const mapStateToProps = (state, props) => {
   }); 
 };
 
-//dodaje propsy komponentu, ale jej wartości nie są danymi ze stanu, ale junkcje wysyłające akdje do magazynu
+//dodaje propsy komponentu, ale jej wartości nie są danymi ze stanu, ale junkcje wysyłające akcje do magazynu
 const mapDispatchToProps = (dispatch, props) => ({
   addColumn: title => dispatch(createActionAddColumn({
     listId: props.id,

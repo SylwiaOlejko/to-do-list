@@ -6,8 +6,9 @@ import PropTypes from 'prop-types';
 
 import ReactHtmlParser from 'react-html-parser';
 
-PropTypes.node.isRequired
 
+
+ 
 const Hero = (props) => {
 
 return (
@@ -23,5 +24,9 @@ return (
 </header>
         )
 
-}
+};
+
+Hero.propTypes = {
+    title: PropTypes.string,
+};
 export default Hero;
