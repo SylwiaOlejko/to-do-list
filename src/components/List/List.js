@@ -19,19 +19,20 @@ class List extends React.Component {
       title: PropTypes.node.isRequired,
       description: PropTypes.node,
       columns: PropTypes.array,
-      image: PropTypes.string
-    }
+      image: PropTypes.string,
+      addColumn: PropTypes.func,
+    };
 
     static defaultProps = {
       description: settings.defaultListDescription,
       description: settings.defaultListDescription, 
       description: settings.defaultListDescription,
-    }
+    };
 
     
 
     render() {
-      const {title, image, description, columns} = this.props;
+      const {title, image, description, columns,addColumn} = this.props;
       return (
         <section className={styles.component}>
         
