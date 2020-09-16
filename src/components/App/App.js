@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import PropTypes from 'prop-types';
 import List from '../List/ListContainer';
-import Search from '../Search/SearchContainer';
+import Search from '../Search/Search';
 
 class App extends React.Component {
   static propTypes = {

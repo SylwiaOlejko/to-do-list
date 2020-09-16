@@ -61,3 +61,5 @@ class Search extends React.Component { // eslint-disable-line
     );
   }
 }
+
+export default Search;
