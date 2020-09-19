@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
+import Container from './Container';
 
 class Search extends React.Component { // eslint-disable-line
   static propTypes = {
@@ -57,6 +58,7 @@ class Search extends React.Component { // eslint-disable-line
         <div>
           { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
         </div>
+        <Container/>
       </div>
     );
   }

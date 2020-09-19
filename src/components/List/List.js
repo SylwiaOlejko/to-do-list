@@ -6,6 +6,8 @@ import Column from '../Column/ColumnContainer';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
+import Container from './Container';
+
 
 class List extends React.Component {
   static propTypes = {
@@ -24,7 +26,8 @@ class List extends React.Component {
   render() {
     const {title, image, description, columns, addColumn} = this.props;
     return (
-      <section className={styles.component}>
+      <section className={styles.component}> 
+        
         <Hero titleText={title} image={image} />
         <div className={styles.description}>
           {ReactHtmlParser(description)}
@@ -40,6 +43,12 @@ class List extends React.Component {
             action={(title) => addColumn(title)}
           />
         </div>
+        <div >
+          <Container/>
+
+
+        </div>
+        
       </section>
     );
   }
