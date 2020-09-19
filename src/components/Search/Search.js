@@ -4,9 +4,9 @@ import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
-import Container from './Container';
+import Container from '../Container/Container.js';
 
-class Search extends React.Component { // eslint-disable-line
+class Search extends React.Component { 
   static propTypes = {
     text: PropTypes.string,
     searchString: PropTypes.string,
