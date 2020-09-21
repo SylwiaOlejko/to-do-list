@@ -15,6 +15,16 @@ export const settings = {
   defaultImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
+export const infoContent = {
+  title:'To jest bardzo ładna rybka',
+  subtitle:'Tak ta rybka jest bardzo ładna',
+};
+
+export const faqContent = {
+  title: 'To jest bardzo groźna bakteria',
+  subtitle: 'Tak, ta bakteri jest groźna',
+};
+
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',

@@ -3,6 +3,7 @@ import React from 'react';
 import Container from '../Container/Container';
 import {NavLink, Link} from 'react-router-dom';
 import Hero from '../Hero/Hero';
+import {infoContent} from '../../data/dataStore';
 
 const Info = () => (
   <Container>
@@ -13,9 +14,9 @@ const Info = () => (
       </NavLink>
     </Link>
     <Hero>
-      <h2>To jest bardzo ładna rybka</h2>
+      <h2>{infoContent.title}</h2>
       <i name="fas fa-fish"></i>
-      <h3>Tak ta rybka jest bardzo ładna</h3>
+      <h3>{infoContent.subtitle}</h3>
     </Hero>
   </Container>
 );

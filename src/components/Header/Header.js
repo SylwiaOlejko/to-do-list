@@ -4,6 +4,7 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 
+
 class Header extends React.Component {
   render(){
     return (
@@ -16,6 +17,7 @@ class Header extends React.Component {
             <nav>
               <NavLink exact to='/'>Home</NavLink>
               <NavLink exact to='/info'>Info</NavLink>
+              <NavLink exact to='/faq'>FAQ</NavLink>
             </nav>
           </div>
         </Container>

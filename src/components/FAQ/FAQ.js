@@ -2,6 +2,8 @@ import React from 'react';
 import Container from '../Container/Container';
 import {NavLink, Link} from 'react-router-dom';
 import Hero from '../Hero/Hero';
+import {faqContent} from '../../data/dataStore';
+
 
 const FAQ = () => (
   <Container>
@@ -12,9 +14,9 @@ const FAQ = () => (
       </NavLink>
     </Link>
     <Hero>
-      <h2>To jest bardzo groźna bakteria</h2>
+      <h2>{faqContent.title}</h2>
       <i name="fas fa-bacteria"></i>
-      <h3>Tak, ta bakteri jest groźna</h3>
+      <h3>{faqContent.subtitle}</h3>
     </Hero>
   </Container>
 );
