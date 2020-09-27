@@ -92,6 +92,22 @@ const lists = [
   },
 ];
 
+/*const picture = [
+  {
+    id: 'picture-1',
+    title: 'Dzień dobry!',
+    description: 'Jak Ci minął dzień?',
+    image: 'https://ocdn.eu/pulscms-transforms/1/aq5k9kpTURBXy80ZmNiOGI2NWE1MWI5ODVjNTQ4YjU1YTRhNWMyNzVkZi5wbmeTlQMAIs0Cg80BaZMFzQMUzQG8kwmmMWE1NDUwBoGhMAU/naukowcy-twierdza-ze-zycie-na-ziemie-przybylo-z-kosmosu.webp',
+  },
+];
+const pictures = [
+  {
+    id: 'picture-2',
+    title: 'Witamy na pokładzie!',
+    description: 'Zaczynamy?',
+    image: 'https://mlodytechnik.pl/i/images/1/2/9/Y3c9MTE3MCZjaD01MTM=_src_16129-Fotolia_99128546_Subscription_Monthly_M.jpg',
+  },
+];*/
 
 const columns = [
   {

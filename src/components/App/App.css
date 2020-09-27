@@ -1,22 +1,10 @@
-.component {
-  padding: 12px;
+.switchWrapper {
+  position: relative;
 }
 
-.title {
-  padding: 36px 0;
-  text-align: center;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  padding: 24px 0;
-  text-align: center;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: normal;
-}
-
-.title + .subtitle {
-  margin-top: -36px;
+.switchWrapper > :first-child ~ * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
